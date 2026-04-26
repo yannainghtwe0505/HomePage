@@ -41,7 +41,7 @@ export function HomeHighlights() {
     >
       <div className="mx-auto max-w-6xl">
         <FadeIn className="max-w-2xl">
-          <p className="text-sm font-semibold uppercase tracking-wider text-violet-600 dark:text-violet-400">
+          <p className="text-sm font-semibold uppercase tracking-wider text-teal-800 dark:text-teal-400">
             {hi.eyebrow}
           </p>
           <h2
@@ -60,9 +60,9 @@ export function HomeHighlights() {
               <FadeIn key={item.to + item.cardIndex} delay={0.06 * i}>
                 <Link
                   to={item.to}
-                  className="group flex h-full flex-col rounded-2xl border border-slate-200/80 bg-white p-8 shadow-sm transition hover:border-blue-200 hover:shadow-lg dark:border-slate-700 dark:bg-slate-950 dark:hover:border-violet-500/40"
+                  className="group flex h-full flex-col rounded-2xl border border-slate-200/80 bg-white p-8 shadow-sm transition hover:border-blue-200 hover:shadow-lg dark:border-slate-700 dark:bg-slate-950 dark:hover:border-teal-500/40"
                 >
-                  <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-to-br from-blue-600/10 to-violet-600/10 text-blue-700 dark:text-blue-300">
+                  <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-to-br from-blue-800/12 to-teal-600/10 text-teal-800 dark:text-teal-300">
                     {icons[i]}
                   </div>
                   <p className="mt-4 text-xs font-semibold uppercase tracking-wider text-slate-500 dark:text-slate-400">

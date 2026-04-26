@@ -15,13 +15,13 @@ export function CareersCta() {
       aria-labelledby="careers-heading"
     >
       <FadeIn className="mx-auto max-w-6xl">
-        <div className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-blue-600 via-blue-700 to-violet-700 px-6 py-14 text-center shadow-2xl shadow-blue-900/30 sm:px-12 sm:py-16 lg:px-16">
+        <div className="relative overflow-hidden rounded-3xl bg-brand-hero px-6 py-14 text-center shadow-2xl shadow-teal-950/35 sm:px-12 sm:py-16 lg:px-16">
           <div
             className="pointer-events-none absolute -left-24 top-0 h-64 w-64 rounded-full bg-cyan-400/30 blur-3xl"
             aria-hidden
           />
           <div
-            className="pointer-events-none absolute -right-20 bottom-0 h-72 w-72 rounded-full bg-violet-400/25 blur-3xl"
+            className="pointer-events-none absolute -right-20 bottom-0 h-72 w-72 rounded-full bg-teal-400/25 blur-3xl"
             aria-hidden
           />
           <motion.div
@@ -52,6 +52,12 @@ export function CareersCta() {
                 className="inline-flex items-center justify-center rounded-full border border-white/40 px-8 py-3.5 text-base font-semibold text-white transition hover:bg-white/10"
               >
                 {c.recruitPage}
+              </Link>
+              <Link
+                to="/contact"
+                className="inline-flex items-center justify-center rounded-full border border-white/40 px-8 py-3.5 text-base font-semibold text-white transition hover:bg-white/10"
+              >
+                {c.contactBusiness}
               </Link>
               <Link
                 to="/company"

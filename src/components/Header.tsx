@@ -69,7 +69,7 @@ export function Header() {
             elevated ? 'text-slate-900 dark:text-white' : 'text-white drop-shadow-sm'
           }`}
         >
-          <span className="flex h-9 w-9 items-center justify-center rounded-xl bg-gradient-to-br from-blue-600 to-violet-600 text-sm font-extrabold text-white shadow-lg shadow-blue-600/25 transition group-hover:shadow-blue-600/40">
+          <span className="flex h-9 w-9 items-center justify-center rounded-xl bg-brand-gradient-diagonal text-sm font-extrabold text-white shadow-lg shadow-teal-900/20 transition group-hover:shadow-teal-900/35">
             C
           </span>
           <span className="hidden sm:inline">CMC</span>
@@ -86,7 +86,7 @@ export function Header() {
           <LanguageSwitcher inverted={onHero} />
           <NavLink
             to="/recruit"
-            className="ml-1 inline-flex items-center rounded-full bg-gradient-to-r from-blue-600 to-violet-600 px-4 py-2 text-sm font-semibold text-white shadow-md shadow-blue-600/20 transition hover:brightness-110"
+            className="ml-1 inline-flex items-center rounded-full bg-brand-gradient px-4 py-2 text-sm font-semibold text-white shadow-md shadow-teal-900/15 transition hover:brightness-110"
           >
             {m.header.joinUs}
           </NavLink>
@@ -99,7 +99,7 @@ export function Header() {
           <NavLink
             to="/recruit"
             onClick={() => setOpen(false)}
-            className={`inline-flex rounded-full bg-gradient-to-r from-blue-600 to-violet-600 px-3 py-1.5 text-xs font-semibold text-white shadow-md sm:text-sm ${
+            className={`inline-flex rounded-full bg-brand-gradient px-3 py-1.5 text-xs font-semibold text-white shadow-md sm:text-sm ${
               elevated ? '' : 'shadow-black/20'
             }`}
           >

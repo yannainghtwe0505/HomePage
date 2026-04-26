@@ -142,7 +142,7 @@ export function ContactPage() {
 
               <button
                 type="submit"
-                className="mt-8 w-full rounded-full bg-gradient-to-r from-blue-600 to-violet-600 py-3.5 text-sm font-semibold text-white shadow-md transition hover:brightness-110 sm:w-auto sm:px-10"
+                className="mt-8 w-full rounded-full bg-brand-gradient py-3.5 text-sm font-semibold text-white shadow-md transition hover:brightness-110 sm:w-auto sm:px-10"
               >
                 {m.contact.submit}
               </button>

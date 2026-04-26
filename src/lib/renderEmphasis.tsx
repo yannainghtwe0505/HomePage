@@ -9,7 +9,7 @@ export function renderWithEmphasis(text: string, keyPrefix: string): ReactNode[]
       return (
         <span
           key={`${keyPrefix}-${i}`}
-          className="rounded-md bg-gradient-to-r from-blue-600/18 to-violet-600/18 px-1.5 py-0.5 font-semibold text-blue-800 dark:from-blue-400/22 dark:to-violet-400/22 dark:text-blue-200"
+          className="rounded-md bg-gradient-to-r from-blue-800/20 to-teal-600/18 px-1.5 py-0.5 font-semibold text-blue-900 dark:from-teal-400/22 dark:to-blue-400/20 dark:text-teal-100"
         >
           {inner}
         </span>

@@ -82,7 +82,7 @@ export function AccessPage() {
               </ul>
               <Link
                 to="/contact"
-                className="mt-8 inline-flex rounded-full bg-gradient-to-r from-blue-600 to-violet-600 px-6 py-3 text-sm font-semibold text-white shadow-md transition hover:brightness-110"
+                className="mt-8 inline-flex rounded-full bg-brand-gradient px-6 py-3 text-sm font-semibold text-white shadow-md transition hover:brightness-110"
               >
                 {a.contactBtn}
               </Link>

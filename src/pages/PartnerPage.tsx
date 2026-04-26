@@ -51,20 +51,20 @@ export function PartnerPage() {
 
           <FadeIn delay={0.08}>
             <article className="flex h-full flex-col rounded-2xl border border-slate-200/80 bg-slate-50/80 p-8 dark:border-slate-800 dark:bg-slate-900/40">
-              <span className="text-xs font-semibold uppercase tracking-wider text-violet-600 dark:text-violet-400">
+              <span className="text-xs font-semibold uppercase tracking-wider text-teal-700 dark:text-teal-400">
                 {supplier.label}
               </span>
               <h2 className="mt-2 font-display text-2xl font-bold text-slate-900 dark:text-white">{supplier.title}</h2>
               <p className="mt-4 flex-1 text-slate-600 dark:text-slate-400">{supplier.body}</p>
               <ul className="mt-6 space-y-2 text-sm text-slate-600 dark:text-slate-400">
                 <li className="flex gap-2">
-                  <span className="text-violet-600 dark:text-violet-400" aria-hidden>
+                  <span className="text-teal-700 dark:text-teal-400" aria-hidden>
                     ✓
                   </span>
                   {supplier.b1}
                 </li>
                 <li className="flex gap-2">
-                  <span className="text-violet-600 dark:text-violet-400" aria-hidden>
+                  <span className="text-teal-700 dark:text-teal-400" aria-hidden>
                     ✓
                   </span>
                   {supplier.b2}
@@ -75,13 +75,13 @@ export function PartnerPage() {
         </div>
 
         <FadeIn delay={0.1}>
-          <section className="rounded-2xl border border-blue-200/60 bg-gradient-to-br from-blue-50 to-violet-50 p-8 text-center dark:border-blue-900/40 dark:from-slate-900 dark:to-slate-900 sm:p-12">
+          <section className="rounded-2xl border border-blue-200/60 bg-gradient-to-br from-blue-50 to-teal-50/90 p-8 text-center dark:border-blue-900/40 dark:from-slate-900 dark:to-slate-900 sm:p-12">
             <h2 className="font-display text-2xl font-bold text-slate-900 dark:text-white">{bottom.title}</h2>
             <p className="mx-auto mt-4 max-w-2xl text-slate-600 dark:text-slate-400">{bottom.sub}</p>
             <div className="mt-8 flex flex-wrap justify-center gap-4">
               <Link
                 to="/contact"
-                className="inline-flex rounded-full bg-gradient-to-r from-blue-600 to-violet-600 px-8 py-3.5 text-sm font-semibold text-white shadow-md transition hover:brightness-110"
+                className="inline-flex rounded-full bg-brand-gradient px-8 py-3.5 text-sm font-semibold text-white shadow-md transition hover:brightness-110"
               >
                 {bottom.contact}
               </Link>

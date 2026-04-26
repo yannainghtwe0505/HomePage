@@ -43,7 +43,7 @@ export function BusinessPage() {
           {services.map((s, i) => (
             <FadeIn key={s.title} delay={0.06 * i}>
               <article className="flex h-full flex-col rounded-2xl border border-slate-200/80 bg-slate-50/50 p-8 dark:border-slate-800 dark:bg-slate-900/40">
-                <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-to-br from-blue-600 to-violet-600 text-white">
+                <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-brand-gradient-diagonal text-white">
                   <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden>
                     {serviceIcons[i]}
                   </svg>
@@ -65,7 +65,7 @@ export function BusinessPage() {
                 <FadeIn key={b.title} delay={0.04 * i}>
                   <div className="flex gap-4 rounded-2xl border border-slate-200/80 bg-white p-6 dark:border-slate-800 dark:bg-slate-950">
                     <span
-                      className="mt-1 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-blue-600 to-violet-600"
+                      className="mt-1 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-brand-gradient-diagonal"
                       aria-hidden
                     >
                       <svg className="h-3.5 w-3.5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -84,7 +84,7 @@ export function BusinessPage() {
         </FadeIn>
 
         <FadeIn delay={0.06}>
-          <section className="rounded-2xl border border-blue-200/60 bg-gradient-to-br from-blue-50/80 to-violet-50/50 p-8 dark:border-blue-900/40 dark:from-slate-900 dark:to-slate-900/80 sm:p-10">
+          <section className="rounded-2xl border border-blue-200/60 bg-gradient-to-br from-blue-50/80 to-teal-50/60 p-8 dark:border-blue-900/40 dark:from-slate-900 dark:to-slate-900/80 sm:p-10">
             <h2 className="font-display text-xl font-bold text-slate-900 dark:text-white">{er.title}</h2>
             <p className="mt-3 max-w-3xl text-slate-700 dark:text-slate-300">{er.body}</p>
             <a
@@ -108,7 +108,7 @@ export function BusinessPage() {
             </Link>
             <Link
               to="/contact"
-              className="inline-flex rounded-full bg-gradient-to-r from-blue-600 to-violet-600 px-6 py-3 text-sm font-semibold text-white shadow-md transition hover:brightness-110"
+              className="inline-flex rounded-full bg-brand-gradient px-6 py-3 text-sm font-semibold text-white shadow-md transition hover:brightness-110"
             >
               {cta.contact}
             </Link>

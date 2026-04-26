@@ -7,8 +7,27 @@
   --color-surface: #fafbfc;
   --color-surface-dark: #0a0a0f;
   --color-muted: #64748b;
-  --color-accent-from: #2563eb;
-  --color-accent-to: #7c3aed;
+  /* Corporate trust palette: deep blue → teal (less “startup purple”) */
+  --color-accent-from: #1d4ed8;
+  --color-accent-to: #0d9488;
+  --color-accent-deep: #172554;
+}
+
+@utility bg-brand-gradient {
+  background-image: linear-gradient(to right, var(--color-accent-from), var(--color-accent-to));
+}
+
+@utility bg-brand-gradient-diagonal {
+  background-image: linear-gradient(to bottom right, var(--color-accent-from), var(--color-accent-to));
+}
+
+@utility bg-brand-hero {
+  background-image: linear-gradient(
+    to bottom right,
+    var(--color-accent-from),
+    var(--color-accent-deep),
+    var(--color-accent-to)
+  );
 }
 
 @layer base {

@@ -40,9 +40,9 @@ export function VisionValuesSection({ id = 'vision-values' }: Props) {
                 <motion.article
                   whileHover={{ y: -4 }}
                   transition={{ type: 'spring', stiffness: 400, damping: 25 }}
-                  className="group flex h-full flex-col rounded-2xl border border-slate-200/80 bg-white p-6 shadow-sm transition-shadow hover:border-blue-200/80 hover:shadow-lg dark:border-slate-800 dark:bg-slate-950 dark:hover:border-violet-500/30"
+                  className="group flex h-full flex-col rounded-2xl border border-slate-200/80 bg-white p-6 shadow-sm transition-shadow hover:border-blue-200/80 hover:shadow-lg dark:border-slate-800 dark:bg-slate-950 dark:hover:border-teal-500/30"
                 >
-                  <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-to-br from-blue-600/15 to-violet-600/15 text-blue-700 transition group-hover:from-blue-600/25 group-hover:to-violet-600/25 dark:text-blue-300">
+                  <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-to-br from-blue-800/15 to-teal-600/15 text-blue-800 transition group-hover:from-blue-800/25 group-hover:to-teal-600/25 dark:text-teal-300">
                     {VALUE_ICONS[i]}
                   </div>
                   <p className="mt-4 text-xs font-semibold uppercase tracking-wide text-slate-500 dark:text-slate-500">

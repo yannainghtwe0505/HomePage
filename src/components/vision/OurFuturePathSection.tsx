@@ -41,7 +41,7 @@ export function OurFuturePathSection({ id = 'our-future-path' }: Props) {
         <div className="grid gap-14 lg:grid-cols-12 lg:gap-12">
           <div className="lg:col-span-5">
             <FadeIn>
-              <p className="text-sm font-semibold uppercase tracking-wider text-violet-600 dark:text-violet-400">{fp.eyebrow}</p>
+              <p className="text-sm font-semibold uppercase tracking-wider text-teal-800 dark:text-teal-400">{fp.eyebrow}</p>
               <h2 className="mt-3 font-display text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl dark:text-white">
                 {fp.title}
               </h2>
@@ -66,9 +66,9 @@ export function OurFuturePathSection({ id = 'our-future-path' }: Props) {
                   <motion.li
                     whileHover={{ y: -3 }}
                     transition={{ type: 'spring', stiffness: 400, damping: 28 }}
-                    className="group h-full rounded-2xl border border-slate-200/90 bg-white p-5 shadow-sm transition-shadow hover:border-violet-300/80 hover:shadow-md dark:border-slate-800 dark:bg-slate-900/40 dark:hover:border-violet-500/35"
+                    className="group h-full rounded-2xl border border-slate-200/90 bg-white p-5 shadow-sm transition-shadow hover:border-teal-300/80 hover:shadow-md dark:border-slate-800 dark:bg-slate-900/40 dark:hover:border-teal-600/35"
                   >
-                    <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-gradient-to-br from-violet-600/12 to-blue-600/12 text-violet-700 transition group-hover:from-violet-600/20 group-hover:to-blue-600/20 dark:text-violet-300">
+                    <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-gradient-to-br from-teal-600/14 to-blue-700/14 text-teal-800 transition group-hover:from-teal-600/22 group-hover:to-blue-700/22 dark:text-teal-300">
                       {BULLET_ICONS[i] ?? BULLET_ICONS[0]}
                     </div>
                     <h3 className="mt-4 font-display text-base font-bold text-slate-900 dark:text-white">{b.title}</h3>

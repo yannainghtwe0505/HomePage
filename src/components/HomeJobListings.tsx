@@ -27,13 +27,13 @@ export function HomeJobListings() {
           {j.cards.map((card, i) => (
             <FadeIn key={card.title} delay={0.07 * i}>
               <article className="flex h-full flex-col rounded-2xl border border-slate-200/80 bg-slate-50/50 p-6 shadow-sm dark:border-slate-800 dark:bg-slate-900/40 sm:p-7">
-                <span className="inline-flex w-fit rounded-full bg-gradient-to-r from-blue-600/15 to-violet-600/15 px-3 py-1 text-xs font-bold text-blue-800 dark:text-blue-200">
+                <span className="inline-flex w-fit rounded-full bg-gradient-to-r from-blue-800/15 to-teal-600/15 px-3 py-1 text-xs font-bold text-blue-900 dark:text-teal-200">
                   {card.badge}
                 </span>
                 <h3 className="mt-4 font-display text-lg font-bold text-slate-900 dark:text-white">{card.title}</h3>
                 <p className="mt-2 text-sm text-slate-500 dark:text-slate-400">{card.meta}</p>
                 <p className="mt-3 text-sm font-semibold text-slate-800 dark:text-slate-200">{card.salary}</p>
-                <p className="mt-3 text-xs font-medium uppercase tracking-wide text-violet-700 dark:text-violet-300">
+                <p className="mt-3 text-xs font-medium uppercase tracking-wide text-teal-800 dark:text-teal-300">
                   {card.tags}
                 </p>
                 <p className="mt-4 flex-1 text-sm leading-relaxed text-slate-600 dark:text-slate-400">{card.body}</p>
@@ -42,7 +42,7 @@ export function HomeJobListings() {
                     href={ENGAGE_RECRUIT_URL}
                     target="_blank"
                     rel="noreferrer"
-                    className="inline-flex flex-1 items-center justify-center rounded-full bg-gradient-to-r from-blue-600 to-violet-600 px-4 py-2.5 text-center text-sm font-semibold text-white shadow-md transition hover:brightness-110"
+                    className="inline-flex flex-1 items-center justify-center rounded-full bg-brand-gradient px-4 py-2.5 text-center text-sm font-semibold text-white shadow-md transition hover:brightness-110"
                   >
                     {j.applyEngage}
                   </a>

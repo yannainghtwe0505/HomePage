@@ -111,7 +111,7 @@ export function JobDetailModal({ job, locale, labels, onClose }: Props) {
           </section>
 
           <section className="mt-6">
-            <h3 className="text-sm font-bold uppercase tracking-wide text-violet-600 dark:text-violet-400">{labels.preferred}</h3>
+            <h3 className="text-sm font-bold uppercase tracking-wide text-teal-700 dark:text-teal-400">{labels.preferred}</h3>
             <ul className="mt-2 list-disc space-y-1 pl-5 text-sm text-slate-600 dark:text-slate-400">
               {(locale === 'ja' ? job.preferredSkillsJa : job.preferredSkills).map((line) => (
                 <li key={line}>{line}</li>
@@ -120,7 +120,7 @@ export function JobDetailModal({ job, locale, labels, onClose }: Props) {
           </section>
 
           <section className="mt-6">
-            <h3 className="text-sm font-bold uppercase tracking-wide text-violet-600 dark:text-violet-400">{labels.techStack}</h3>
+            <h3 className="text-sm font-bold uppercase tracking-wide text-teal-700 dark:text-teal-400">{labels.techStack}</h3>
             <div className="mt-2 flex flex-wrap gap-1.5">
               {job.techStack.map((t) => (
                 <span
@@ -192,7 +192,7 @@ export function JobDetailModal({ job, locale, labels, onClose }: Props) {
               <div className="flex flex-col gap-2 sm:flex-row">
                 <button
                   type="submit"
-                  className="inline-flex flex-1 justify-center rounded-full bg-gradient-to-r from-blue-600 to-violet-600 px-4 py-2.5 text-sm font-semibold text-white shadow-md hover:brightness-110"
+                  className="inline-flex flex-1 justify-center rounded-full bg-brand-gradient px-4 py-2.5 text-sm font-semibold text-white shadow-md hover:brightness-110"
                 >
                   {labels.formSubmit}
                 </button>

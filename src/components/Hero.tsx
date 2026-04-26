@@ -53,7 +53,7 @@ export function Hero() {
           }`}
         >
           {h.line1}
-          <span className="mt-1 block bg-gradient-to-r from-blue-400 via-cyan-300 to-violet-400 bg-clip-text text-transparent sm:mt-2">
+          <span className="mt-1 block bg-gradient-to-r from-blue-400 via-cyan-300 to-teal-400 bg-clip-text text-transparent sm:mt-2">
             {h.line2}
           </span>
         </motion.h1>
@@ -69,20 +69,23 @@ export function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.55, delay: 0.2 }}
-          className="mt-10 flex flex-wrap items-center gap-4"
+          className="mt-10 flex max-w-2xl flex-col gap-5"
         >
           <Link
             to="/recruit"
-            className="inline-flex items-center justify-center rounded-full bg-white px-8 py-3.5 text-base font-semibold text-slate-900 shadow-lg transition hover:bg-slate-100"
+            className="inline-flex w-fit items-center justify-center rounded-full bg-white px-8 py-3.5 text-base font-semibold text-slate-900 shadow-lg transition hover:bg-slate-100"
           >
             {h.ctaPrimary}
           </Link>
-          <Link
-            to="/company"
-            className="inline-flex items-center justify-center rounded-full border border-white/25 bg-white/5 px-8 py-3.5 text-base font-semibold text-white backdrop-blur-sm transition hover:bg-white/10"
-          >
-            {h.ctaSecondary}
-          </Link>
+          <p className="text-sm leading-relaxed text-slate-300/95 sm:text-[0.9375rem]">{h.trustLine}</p>
+          <div className="flex flex-wrap gap-x-6 gap-y-2 text-sm font-semibold">
+            <Link to="/contact" className="text-white/90 underline decoration-white/35 underline-offset-4 transition hover:text-white">
+              {h.linkContact} →
+            </Link>
+            <Link to="/company" className="text-white/90 underline decoration-white/35 underline-offset-4 transition hover:text-white">
+              {h.linkCompany} →
+            </Link>
+          </div>
         </motion.div>
       </div>
 

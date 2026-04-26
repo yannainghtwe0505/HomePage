@@ -8,6 +8,7 @@ import { RecruitPage } from './pages/RecruitPage'
 import { AccessPage } from './pages/AccessPage'
 import { PartnerPage } from './pages/PartnerPage'
 import { ContactPage } from './pages/ContactPage'
+import { PrivacyPage } from './pages/PrivacyPage'
 
 export default function App() {
   return (
@@ -22,6 +23,7 @@ export default function App() {
             <Route path="/access" element={<AccessPage />} />
             <Route path="/partner" element={<PartnerPage />} />
             <Route path="/contact" element={<ContactPage />} />
+            <Route path="/privacy" element={<PrivacyPage />} />
           </Route>
         </Routes>
       </I18nProvider>

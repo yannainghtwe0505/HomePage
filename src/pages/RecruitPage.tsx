@@ -4,6 +4,7 @@ import { FadeIn } from '../components/FadeIn'
 import { WhyJoinUs } from '../components/WhyJoinUs'
 import { VisionValuesSection } from '../components/vision/VisionValuesSection'
 import { OurFuturePathSection } from '../components/vision/OurFuturePathSection'
+import { RecruitTalentPackage } from '../components/recruit/RecruitTalentPackage'
 import { CareersJobBoard } from '../components/careers/CareersJobBoard'
 import { ENGAGE_RECRUIT_URL, CONTACT_EMAIL } from '../lib/constants'
 import { useI18n } from '../i18n/useI18n'
@@ -38,7 +39,7 @@ export function RecruitPage() {
             className="mt-3 max-w-3xl font-display text-3xl font-extrabold tracking-tight sm:text-4xl lg:text-5xl"
           >
             {hero.line1}{' '}
-            <span className="bg-gradient-to-r from-blue-400 to-violet-400 bg-clip-text text-transparent">{hero.line2}</span>
+            <span className="bg-gradient-to-r from-blue-400 to-teal-300 bg-clip-text text-transparent">{hero.line2}</span>
           </motion.h1>
           <motion.p
             initial={{ opacity: 0, y: 16 }}
@@ -84,6 +85,8 @@ export function RecruitPage() {
 
       <WhyJoinUs />
 
+      <RecruitTalentPackage />
+
       <CareersJobBoard />
 
       <section className="border-y border-slate-200/80 bg-slate-50 px-4 py-20 dark:border-slate-800 dark:bg-slate-900/40 sm:px-6 sm:py-24 lg:px-8">
@@ -113,7 +116,7 @@ export function RecruitPage() {
       <section id="stack" className="scroll-mt-24 px-4 py-20 sm:px-6 sm:py-24 lg:px-8">
         <div className="mx-auto max-w-6xl">
           <FadeIn>
-            <p className="text-sm font-semibold uppercase tracking-wider text-violet-600 dark:text-violet-400">
+            <p className="text-sm font-semibold uppercase tracking-wider text-teal-700 dark:text-teal-400">
               {stack.eyebrow}
             </p>
             <h2 className="mt-3 font-display text-3xl font-bold tracking-tight text-slate-900 dark:text-white">{stack.title}</h2>
@@ -133,9 +136,9 @@ export function RecruitPage() {
 
       <section className="px-4 pb-24 sm:px-6 lg:px-8" aria-labelledby="apply-heading">
         <FadeIn className="mx-auto max-w-6xl">
-          <div className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-blue-600 via-blue-700 to-violet-700 px-6 py-14 text-center shadow-2xl shadow-blue-900/30 sm:px-12 sm:py-16">
+          <div className="relative overflow-hidden rounded-3xl bg-brand-hero px-6 py-14 text-center shadow-2xl shadow-teal-950/35 sm:px-12 sm:py-16">
             <div className="pointer-events-none absolute -left-24 top-0 h-64 w-64 rounded-full bg-cyan-400/30 blur-3xl" aria-hidden />
-            <div className="pointer-events-none absolute -right-20 bottom-0 h-72 w-72 rounded-full bg-violet-400/25 blur-3xl" aria-hidden />
+            <div className="pointer-events-none absolute -right-20 bottom-0 h-72 w-72 rounded-full bg-teal-400/25 blur-3xl" aria-hidden />
             <h2 id="apply-heading" className="relative font-display text-3xl font-bold tracking-tight text-white sm:text-4xl">
               {apply.title}
             </h2>

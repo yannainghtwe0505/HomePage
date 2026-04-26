@@ -43,7 +43,7 @@ export function About() {
               loading="lazy"
               decoding="async"
             />
-            <div className="absolute inset-0 bg-gradient-to-tr from-blue-600/20 to-violet-600/10" aria-hidden />
+            <div className="absolute inset-0 bg-gradient-to-tr from-blue-800/18 to-teal-500/12" aria-hidden />
           </div>
         </FadeIn>
       </div>

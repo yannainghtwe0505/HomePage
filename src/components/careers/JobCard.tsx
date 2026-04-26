@@ -19,7 +19,7 @@ export function JobCard({ job, locale, labels, onSelect }: Props) {
         : labels.employment.Contract
 
   return (
-    <article className="flex flex-col rounded-2xl border border-slate-200/80 bg-white p-6 shadow-sm transition hover:border-blue-200 hover:shadow-md dark:border-slate-800 dark:bg-slate-950 dark:hover:border-violet-500/30">
+    <article className="flex flex-col rounded-2xl border border-slate-200/80 bg-white p-6 shadow-sm transition hover:border-blue-200 hover:shadow-md dark:border-slate-800 dark:bg-slate-950 dark:hover:border-teal-500/30">
       <div className="flex flex-wrap items-start justify-between gap-2">
         <div>
           {job.hot ? (
