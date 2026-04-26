@@ -41,6 +41,14 @@ export const en: typeof ja = {
     privacyLine:
       'For privacy requests and disclosures, please use the contact form or email. Ginza Sanno Building 3F, 4-10-10 Ginza, Chuo-ku, Tokyo 104-0061 · ',
     copyright: 'All rights reserved.',
+    corporateBlock: {
+      heading: 'Registered office & contact',
+      legalName: 'CMC Inc. (株式会社シ・エム・シ)',
+      address: 'Ginza Sanno Building 3F, 4-10-10 Ginza, Chuo-ku, Tokyo 104-0061, Japan',
+      tel: 'Tel: +81-3-3544-0644 (weekdays 9:00–19:00)',
+      email: 'Email: info@cmc-a.co.jp',
+      privacyLabel: 'Privacy policy (website)',
+    },
   },
   home: {
     hero: {
@@ -48,11 +56,11 @@ export const en: typeof ja = {
       line1: 'Licensed IT staffing',
       line2: 'and delivery support.',
       serviceOneLiner:
-        'CMC is a Tokyo (Ginza)–based talent services company providing IT engineer staffing and placement (including SES, general dispatch, and paid job introduction) plus software development support and technical consulting.',
-      sub: 'Founded in 1996. We support enterprise delivery and engineers across Greater Tokyo under licensed, compliant operations.',
+        'We provide IT engineer dispatch, contracted system development, and technical support. SES, general staffing, and paid job placement are operated under applicable licenses from our Tokyo (Ginza) head office, primarily for clients in Greater Tokyo.',
+      sub: 'Founded in 1996. We support project delivery and engineers through licensed, compliant operations.',
       ctaPrimary: 'Careers & openings',
       trustLine:
-        'Tokyo / Ginza HQ · IT talent services (dispatch, placement, SES) · Staffing license 13-301513 · Job placement 13-ユ-302642',
+        'CMC Inc. (株式会社シ・エム・シ) · Ginza, Chuo-ku, Tokyo HQ · IT staffing & development support · Staffing 13-301513 · Job placement 13-ユ-302642',
       linkContact: 'Business inquiries',
       linkBusiness: 'Services & licenses',
       linkCompany: 'Company profile',
@@ -61,9 +69,10 @@ export const en: typeof ja = {
       eyebrow: 'What we deliver',
       title: 'From AI and cloud to delivery teams—one partner',
       sub: 'Licensed talent services and development support—from platform work through team staffing—for client programs across Greater Tokyo.',
+      serviceBullets: ['IT engineer dispatch (SES)', 'System development (contracted)', 'Technical support'],
       serviceLead:
         'Core offerings: engineer dispatch under SES contracts, general staffing, paid job-placement, and software/consulting support—combined to match each engagement.',
-      serviceCta: 'Services, licenses & details',
+      serviceCta: 'View services',
       items: [
         {
           title: 'AI & data',
@@ -81,6 +90,25 @@ export const en: typeof ja = {
           title: 'Talent operations',
           body: 'SES, dispatch, and placement under licensed operations—speed with compliance and predictable onboarding.',
         },
+      ],
+    },
+    quickLinks: {
+      eyebrow: 'Corporate',
+      title: 'Key pages',
+      items: [
+        { to: '/company', label: 'Company' },
+        { to: '/business', label: 'Services' },
+        { to: '/recruit', label: 'Careers' },
+        { to: '/privacy', label: 'Privacy policy' },
+      ],
+    },
+    businessFlow: {
+      eyebrow: 'Flow',
+      title: 'Typical engagement (B2B)',
+      steps: [
+        { title: 'Inquiry', desc: 'Contact us by form or phone with your requirements and context.' },
+        { title: 'Proposal', desc: 'We propose staffing structure, profiles, terms, and timeline.' },
+        { title: 'Contract & start', desc: 'After agreements are signed, work begins according to the project plan.' },
       ],
     },
     whyChoose: {
@@ -136,7 +164,7 @@ export const en: typeof ja = {
     news: {
       eyebrow: 'News',
       title: 'Updates',
-      note: 'A selection of recent announcements. For full details, call or use the contact form.',
+      note: 'Selected announcements. For full details, please call or use the contact form.',
       items: [
         {
           date: 'Apr 15, 2025',
@@ -148,13 +176,31 @@ export const en: typeof ja = {
           date: 'Feb 10, 2025',
           dateIso: '2025-02-10',
           title:
-            'We continue hiring for permanent and contract roles, and for partner firms. See the Careers page and en-gage listings for open positions and conditions.',
+            'Ongoing recruitment for permanent and contract employees, and for partner firms. See the Careers page and en-gage for open positions and conditions.',
         },
         {
-          date: 'Nov 8, 2024',
-          dateIso: '2024-11-08',
+          date: 'Dec 2, 2024',
+          dateIso: '2024-12-02',
           title:
-            'Year-end / New Year schedule: closed Dec 28–Jan 5; normal business resumes Jan 6. Email received during the closure will be answered after we reopen.',
+            'Year-end / New Year schedule: closed Saturday, December 28 through Sunday, January 5; normal operations resume Monday, January 6. Email received during the closure will be answered in order after we reopen.',
+        },
+        {
+          date: 'Sep 18, 2024',
+          dateIso: '2024-09-18',
+          title:
+            'Internal rules on information security and personal data protection were revised. Staff briefings were held to reinforce day-to-day compliance.',
+        },
+        {
+          date: 'Jun 3, 2024',
+          dateIso: '2024-06-03',
+          title:
+            'As a PrivacyMark-certified operator, we reviewed our personal information protection management system and conducted employee training.',
+        },
+        {
+          date: 'Apr 1, 2024',
+          dateIso: '2024-04-01',
+          title:
+            'Part of our internal organization was reorganized for the new fiscal year. Where client contact points change, we will notify affected customers individually.',
         },
       ],
     },
@@ -667,6 +713,7 @@ export const en: typeof ja = {
     },
     formIntro:
       'After you tap submit, your mail app opens with a pre-filled message to us. Please review and send from your device. We do not store form submissions on our web server.',
+    processTitle: 'After you send',
     processAfter:
       'After your email is sent, a coordinator will review it and respond by phone or email, typically within two business days. Some inquiries may require additional time. For urgent matters, call +81-3-3544-0644 (weekdays 9:00–19:00).',
     preferEmail: 'Prefer email directly? Reach us at',

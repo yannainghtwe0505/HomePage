@@ -17,7 +17,7 @@ export function HomeNewsTeaser() {
         </FadeIn>
         <ul className="mt-8 divide-y divide-slate-200 dark:divide-slate-800">
           {n.items.map((item, i) => (
-            <FadeIn key={item.date + item.title} delay={0.04 * i}>
+            <FadeIn key={`${item.dateIso}-${i}`} delay={0.04 * i}>
               <li className="flex flex-col gap-1 py-4 sm:flex-row sm:items-baseline sm:gap-8 sm:py-5">
                 <time className="shrink-0 font-mono text-sm font-semibold text-teal-800 dark:text-teal-400" dateTime={item.dateIso}>
                   {item.date}

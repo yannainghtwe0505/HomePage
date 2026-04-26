@@ -1,10 +1,12 @@
 import { useEffect } from 'react'
 import { Hero } from '../components/Hero'
 import { HomeCapabilities } from '../components/home/HomeCapabilities'
+import { HomeCorporateQuickLinks } from '../components/home/HomeCorporateQuickLinks'
 import { HomeWhyChoose } from '../components/home/HomeWhyChoose'
 import { About } from '../components/About'
 import { HomeTechStrip } from '../components/home/HomeTechStrip'
 import { HomeCredibilityStrip } from '../components/home/HomeCredibilityStrip'
+import { HomeBusinessFlow } from '../components/home/HomeBusinessFlow'
 import { HomeNewsTeaser } from '../components/home/HomeNewsTeaser'
 import { HomeJobListings } from '../components/HomeJobListings'
 import { HomeHighlights } from '../components/HomeHighlights'
@@ -23,10 +25,12 @@ export function HomePage() {
     <main>
       <Hero />
       <HomeCapabilities />
+      <HomeCorporateQuickLinks />
       <HomeWhyChoose />
       <About />
       <HomeTechStrip />
       <HomeCredibilityStrip />
+      <HomeBusinessFlow />
       <HomeNewsTeaser />
       <HomeJobListings />
       <HomeHighlights />

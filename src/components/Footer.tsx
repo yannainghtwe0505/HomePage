@@ -31,6 +31,18 @@ export function Footer() {
           </Link>
           <p className="mt-4 max-w-md text-sm leading-relaxed text-slate-600 dark:text-slate-400">{m.footer.tagline}</p>
           <p className="mt-3 max-w-2xl text-xs font-medium leading-relaxed text-slate-700 dark:text-slate-300">{m.footer.trustBlock}</p>
+          <div className="mt-6 max-w-xl rounded-xl border border-slate-200/90 bg-white/80 p-4 dark:border-slate-700 dark:bg-slate-950/60">
+            <p className="text-xs font-semibold uppercase tracking-wider text-slate-500 dark:text-slate-400">{m.footer.corporateBlock.heading}</p>
+            <p className="mt-2 text-sm font-semibold text-slate-900 dark:text-white">{m.footer.corporateBlock.legalName}</p>
+            <p className="mt-1 text-sm leading-relaxed text-slate-600 dark:text-slate-400">{m.footer.corporateBlock.address}</p>
+            <p className="mt-2 text-sm text-slate-600 dark:text-slate-400">{m.footer.corporateBlock.tel}</p>
+            <p className="mt-1 text-sm text-slate-600 dark:text-slate-400">{m.footer.corporateBlock.email}</p>
+            <p className="mt-3 text-sm">
+              <Link to="/privacy" className="font-semibold text-teal-800 underline decoration-teal-800/30 underline-offset-4 hover:decoration-teal-800 dark:text-teal-400 dark:decoration-teal-400/30">
+                {m.footer.corporateBlock.privacyLabel}
+              </Link>
+            </p>
+          </div>
         </div>
         <div>
           <p className="text-xs font-semibold uppercase tracking-wider text-slate-500 dark:text-slate-500">

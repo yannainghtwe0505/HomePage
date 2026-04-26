@@ -89,7 +89,8 @@ export function ContactPage() {
             {m.contact.demoNote ? (
               <p className="mt-4 text-sm text-slate-500 dark:text-slate-500">{m.contact.demoNote}</p>
             ) : null}
-            <p className="mt-5 text-sm leading-relaxed text-slate-600 dark:text-slate-400">{m.contact.processAfter}</p>
+            <p className="mt-5 text-sm font-semibold text-slate-800 dark:text-slate-200">{m.contact.processTitle}</p>
+            <p className="mt-2 text-sm leading-relaxed text-slate-600 dark:text-slate-400">{m.contact.processAfter}</p>
           </FadeIn>
 
           <FadeIn delay={0.06}>
