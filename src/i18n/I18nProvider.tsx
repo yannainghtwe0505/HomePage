@@ -7,7 +7,7 @@ function readInitialLocale(): Locale {
   if (typeof window === 'undefined') return 'ja'
   const saved = window.localStorage.getItem(LOCALE_STORAGE_KEY)
   if (saved === 'ja' || saved === 'en') return saved
-  return window.navigator.language.toLowerCase().startsWith('ja') ? 'ja' : 'en'
+  return 'ja'
 }
 
 export function I18nProvider({ children }: { children: ReactNode }) {

@@ -30,6 +30,7 @@ export function Footer() {
             CMC
           </Link>
           <p className="mt-4 max-w-md text-sm leading-relaxed text-slate-600 dark:text-slate-400">{m.footer.tagline}</p>
+          <p className="mt-3 max-w-2xl text-xs font-medium leading-relaxed text-slate-700 dark:text-slate-300">{m.footer.trustBlock}</p>
         </div>
         <div>
           <p className="text-xs font-semibold uppercase tracking-wider text-slate-500 dark:text-slate-500">

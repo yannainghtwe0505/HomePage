@@ -1,4 +1,5 @@
 import { ja } from './ja'
+import { privacyPolicyEn } from './privacyPolicyEn'
 
 export const en: typeof ja = {
   meta: {
@@ -34,6 +35,8 @@ export const en: typeof ja = {
   footer: {
     tagline:
       'IT-focused talent solutions—thoughtful matching for engineers and enterprises across Greater Tokyo and beyond.',
+    trustBlock:
+      'CMC Inc. (株式会社シ・エム・シ) · Ginza Sanno Building 3F, 4-10-10 Ginza, Chuo-ku, Tokyo 104-0061, Japan · Tel +81-3-3544-0644 (weekdays 9:00–19:00) · info@cmc-a.co.jp',
     explore: 'Explore',
     privacyLine:
       'For privacy requests and disclosures, please use the contact form or email. Ginza Sanno Building 3F, 4-10-10 Ginza, Chuo-ku, Tokyo 104-0061 · ',
@@ -41,10 +44,12 @@ export const en: typeof ja = {
   },
   home: {
     hero: {
-      kicker: 'Core Management Control',
-      line1: 'Engineering that',
-      line2: 'lands in production.',
-      sub: 'We staff and scale serious IT delivery in Greater Tokyo—SES, licensed dispatch, and placement—plus engineering support as clients invest in cloud and AI.',
+      kicker: 'CMC Inc. · IT staffing, dispatch & engineering support',
+      line1: 'Licensed IT staffing',
+      line2: 'and delivery support.',
+      sub: 'We provide general staffing, paid job placement, engineer dispatch under client billing (SES), and software development / consulting support—primarily in Greater Tokyo—for both enterprises and engineers.',
+      b2bOneLiner:
+        'For B2B clients: on-site and hybrid engineers, project-based team composition, and talent for cloud and AI programs—end-to-end, compliance-first.',
       ctaPrimary: 'Careers & openings',
       trustLine:
         'Since 1996 · Ginza HQ, Tokyo · Licensed staffing (13-301513) & job placement (13-ユ-302642) · PrivacyMark certified',
@@ -130,11 +135,26 @@ export const en: typeof ja = {
     news: {
       eyebrow: 'News',
       title: 'Updates',
-      note: 'Selected topics. Contact us for details.',
+      note: 'A selection of recent announcements. For full details, call or use the contact form.',
       items: [
-        { date: 'Apr 2025', dateIso: '2025-04-01', title: 'Website renewed for clearer careers and business information.' },
-        { date: 'Oct 2024', dateIso: '2024-10-01', title: 'Continuing improvements to privacy governance as a PrivacyMark-certified operator.' },
-        { date: 'Jan 2020', dateIso: '2020-01-01', title: 'Expanded engineering services coverage across Greater Tokyo engagements.' },
+        {
+          date: 'Apr 15, 2025',
+          dateIso: '2025-04-15',
+          title:
+            'Corporate website refreshed: reorganized company profile, services, careers, and privacy information, with improved mobile layout.',
+        },
+        {
+          date: 'Nov 8, 2024',
+          dateIso: '2024-11-08',
+          title:
+            'Year-end / New Year hours: closed Dec 28–Jan 5; normal operations resume Jan 6. Email inquiries will be handled in order during the break.',
+        },
+        {
+          date: 'Jun 3, 2024',
+          dateIso: '2024-06-03',
+          title:
+            'As a PrivacyMark-certified operator, we completed a review of our personal information protection management system and staff training.',
+        },
       ],
     },
     storyVision: {
@@ -641,83 +661,38 @@ export const en: typeof ja = {
     page: {
       eyebrow: 'Contact',
       title: 'Talk with us',
-      description: 'Services, partnerships, or careers—send a note and we will route it to the right team.',
+      description:
+        'For services, talent needs, partnerships, or careers—please complete the form below. A coordinator will follow up.',
     },
+    formIntro:
+      'After you tap submit, your mail app opens with a pre-filled message to us. Please review and send from your device. We do not store form submissions on our web server.',
     preferEmail: 'Prefer email directly? Reach us at',
-    demoNote: 'Submit opens your mail client with a pre-filled message. Message is sent from your device; we do not store form bodies on our web server.',
-    labels: { name: 'Name', email: 'Email', message: 'Message' },
-    submit: 'Open mail app',
+    demoNote: '',
+    labels: {
+      name: 'Name (required)',
+      company: 'Company / organization',
+      phone: 'Phone',
+      email: 'Email (required)',
+      inquiryType: 'Inquiry type (required)',
+      inquiryPlaceholder: 'Select a type',
+      message: 'Message (required)',
+    },
+    inquiryOptions: {
+      services: 'Services & talent',
+      recruit: 'Recruiting & applications',
+      partner: 'Partnerships',
+      other: 'Other',
+    },
+    submit: 'Review and open mail app',
     success:
-      'If your mail client opened, you are all set. If not, check your device mail settings or email us directly.',
-    subject: 'Website inquiry',
+      'If your mail composer opened, send the message to complete your inquiry. If it did not open, check mail settings or email info@cmc-a.co.jp directly.',
+    subject: '[Website inquiry]',
     validation: {
       name: 'Please enter your name (at least 2 characters).',
       email: 'Please enter a valid email address.',
       message: 'Please write at least 10 characters so we can help.',
+      inquiryType: 'Please select an inquiry type.',
     },
   },
-  privacyPage: {
-    page: {
-      eyebrow: 'Privacy',
-      title: 'Handling of personal information',
-      description:
-        'CMC Inc. (“we”, “us”) treats the protection of personal information as a material governance topic. This page summarizes key points for visitors to our website. For formal procedures, please contact us.',
-    },
-    sections: [
-      {
-        title: 'Business operator',
-        paragraphs: [
-          'Company: CMC Inc. (株式会社シ・エム・シ)',
-          'Representative: Masato Tatebayashi, Representative Director',
-          'Address: Ginza Sanno Building 3F, 4-10-10 Ginza, Chuo-ku, Tokyo 104-0061, Japan',
-          'Contact: Tel +81-3-3544-0644 / Email info@cmc-a.co.jp',
-        ],
-      },
-      {
-        title: 'Information we collect and why',
-        paragraphs: [
-          'Information submitted through inquiry forms (e.g., name, email, affiliation, message content) is used to respond and manage related communications.',
-          'Recruitment information is used for selection, hiring decisions, onboarding, and improving recruiting operations.',
-        ],
-      },
-      {
-        title: 'Third-party provision and outsourcing',
-        paragraphs: [
-          'We do not provide personal information to third parties without consent except as required by law. When provision is necessary, we notify you of scope and recipients and obtain consent.',
-          'If processing is outsourced, we select vendors carefully and supervise handling to prevent leakage and misuse.',
-        ],
-      },
-      {
-        title: 'Requests for disclosure and correction',
-        paragraphs: [
-          'Requests regarding retained personal data (notification of purpose, disclosure, correction, deletion, suspension of use, etc.) can be directed to our administrative desk. We respond after identity verification within a reasonable period.',
-        ],
-      },
-      {
-        title: 'Security management',
-        paragraphs: [
-          'We implement organizational, personnel, physical, and technical safeguards against unauthorized access, loss, tampering, and leakage, including access control and periodic training.',
-        ],
-      },
-      {
-        title: 'Certified privacy organization',
-        paragraphs: [
-          'CMC is PrivacyMark certified. Complaints regarding personal information may also be directed to the JIPDEC certified privacy help desk (0120-700-779).',
-        ],
-      },
-      {
-        title: 'Cookies',
-        paragraphs: [
-          'We may use cookies for convenience and analytics. You can disable cookies in your browser; some features may become unavailable.',
-        ],
-      },
-      {
-        title: 'Policy updates',
-        paragraphs: [
-          'We may revise this summary to reflect legal changes or business updates. The revised version takes effect when posted on this site.',
-        ],
-      },
-    ],
-    contactCta: 'Go to contact form',
-  },
+  privacyPage: privacyPolicyEn,
 }

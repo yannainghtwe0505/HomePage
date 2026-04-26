@@ -65,6 +65,14 @@ export function Hero() {
         >
           {h.sub}
         </motion.p>
+        <motion.p
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.55, delay: 0.16 }}
+          className="mt-4 max-w-xl text-base font-medium leading-relaxed text-slate-200 sm:text-lg"
+        >
+          {h.b2bOneLiner}
+        </motion.p>
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
