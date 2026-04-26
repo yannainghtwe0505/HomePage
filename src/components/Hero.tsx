@@ -60,18 +60,18 @@ export function Hero() {
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.55, delay: 0.12 }}
-          className="mt-6 max-w-xl text-lg leading-relaxed text-slate-300 sm:text-xl"
+          transition={{ duration: 0.55, delay: 0.1 }}
+          className="mt-5 max-w-2xl text-base font-semibold leading-relaxed text-white sm:text-lg"
         >
-          {h.sub}
+          {h.serviceOneLiner}
         </motion.p>
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.55, delay: 0.16 }}
-          className="mt-4 max-w-xl text-base font-medium leading-relaxed text-slate-200 sm:text-lg"
+          transition={{ duration: 0.55, delay: 0.14 }}
+          className="mt-5 max-w-xl text-lg leading-relaxed text-slate-300 sm:text-xl"
         >
-          {h.b2bOneLiner}
+          {h.sub}
         </motion.p>
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -89,6 +89,9 @@ export function Hero() {
           <div className="flex flex-wrap gap-x-6 gap-y-2 text-sm font-semibold">
             <Link to="/contact" className="text-white/90 underline decoration-white/35 underline-offset-4 transition hover:text-white">
               {h.linkContact} →
+            </Link>
+            <Link to="/business" className="text-white/90 underline decoration-white/35 underline-offset-4 transition hover:text-white">
+              {h.linkBusiness} →
             </Link>
             <Link to="/company" className="text-white/90 underline decoration-white/35 underline-offset-4 transition hover:text-white">
               {h.linkCompany} →

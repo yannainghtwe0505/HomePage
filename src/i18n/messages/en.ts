@@ -44,22 +44,23 @@ export const en: typeof ja = {
   },
   home: {
     hero: {
-      kicker: 'CMC Inc. · IT staffing, dispatch & engineering support',
+      kicker: 'CMC Inc. · IT talent services',
       line1: 'Licensed IT staffing',
       line2: 'and delivery support.',
-      sub: 'We provide general staffing, paid job placement, engineer dispatch under client billing (SES), and software development / consulting support—primarily in Greater Tokyo—for both enterprises and engineers.',
-      b2bOneLiner:
-        'For B2B clients: on-site and hybrid engineers, project-based team composition, and talent for cloud and AI programs—end-to-end, compliance-first.',
+      serviceOneLiner:
+        'CMC is a Tokyo (Ginza)–based talent services company providing IT engineer staffing and placement (including SES, general dispatch, and paid job introduction) plus software development support and technical consulting.',
+      sub: 'Founded in 1996. We support enterprise delivery and engineers across Greater Tokyo under licensed, compliant operations.',
       ctaPrimary: 'Careers & openings',
       trustLine:
-        'Since 1996 · Ginza HQ, Tokyo · Licensed staffing (13-301513) & job placement (13-ユ-302642) · PrivacyMark certified',
-      linkContact: 'Business inquiry',
+        'Tokyo / Ginza HQ · IT talent services (dispatch, placement, SES) · Staffing license 13-301513 · Job placement 13-ユ-302642',
+      linkContact: 'Business inquiries',
+      linkBusiness: 'Services & licenses',
       linkCompany: 'Company profile',
     },
     capabilities: {
       eyebrow: 'What we deliver',
       title: 'From AI and cloud to delivery teams—one partner',
-      sub: 'We combine licensed talent operations with engineering judgment so programs move faster without sacrificing governance.',
+      sub: 'Licensed talent services and development support—from platform work through team staffing—for client programs across Greater Tokyo.',
       serviceLead:
         'Core offerings: engineer dispatch under SES contracts, general staffing, paid job-placement, and software/consulting support—combined to match each engagement.',
       serviceCta: 'Services, licenses & details',
@@ -85,7 +86,7 @@ export const en: typeof ja = {
     whyChoose: {
       eyebrow: 'Why CMC',
       title: 'Faster decisions, deeper technical fit',
-      sub: 'We optimize for outcomes—not generic “coverage.”',
+      sub: 'We align staffing decisions with your constraints, priorities, and delivery context—not generic coverage.',
       items: [
         {
           title: 'Decision velocity',
@@ -141,34 +142,34 @@ export const en: typeof ja = {
           date: 'Apr 15, 2025',
           dateIso: '2025-04-15',
           title:
-            'Corporate website refreshed: reorganized company profile, services, careers, and privacy information, with improved mobile layout.',
+            'Corporate website updated: revised structure for company profile, services, careers, and privacy policy, with improved readability on smartphones.',
+        },
+        {
+          date: 'Feb 10, 2025',
+          dateIso: '2025-02-10',
+          title:
+            'We continue hiring for permanent and contract roles, and for partner firms. See the Careers page and en-gage listings for open positions and conditions.',
         },
         {
           date: 'Nov 8, 2024',
           dateIso: '2024-11-08',
           title:
-            'Year-end / New Year hours: closed Dec 28–Jan 5; normal operations resume Jan 6. Email inquiries will be handled in order during the break.',
-        },
-        {
-          date: 'Jun 3, 2024',
-          dateIso: '2024-06-03',
-          title:
-            'As a PrivacyMark-certified operator, we completed a review of our personal information protection management system and staff training.',
+            'Year-end / New Year schedule: closed Dec 28–Jan 5; normal business resumes Jan 6. Email received during the closure will be answered after we reopen.',
         },
       ],
     },
     storyVision: {
       eyebrow: 'Direction',
-      title: 'Building proprietary platforms—and scaling AI & cloud talent',
-      body: 'We are investing in product-led initiatives and stronger cloud/ML practices. Read the full narrative and open roles on the Careers hub.',
+      title: 'In-house products and cloud / data initiatives',
+      body: 'We continue to strengthen in-house development and cloud/data capabilities so engineers can contribute across technology and business needs. Details are posted on the Careers section.',
       ctaVision: 'Vision & values',
       ctaFuture: 'Our Future Path',
       ctaJobs: 'Open positions',
     },
     about: {
       eyebrow: 'About',
-      title: 'We design for delivery—not just headcount',
-      body: 'We combine dispatch, placement, and SES under licensed operations—balancing velocity with governance. Coordinators go beyond résumés into SDLC realities and sustainable pacing.',
+      title: 'From staffing to team design and retention',
+      body: 'We combine dispatch, placement, and SES under licensed, contract-compliant operations. Coordinators assess role scope, delivery process, and operational load from matching through ongoing support.',
       link: 'Company overview',
     },
     highlights: {
@@ -666,6 +667,8 @@ export const en: typeof ja = {
     },
     formIntro:
       'After you tap submit, your mail app opens with a pre-filled message to us. Please review and send from your device. We do not store form submissions on our web server.',
+    processAfter:
+      'After your email is sent, a coordinator will review it and respond by phone or email, typically within two business days. Some inquiries may require additional time. For urgent matters, call +81-3-3544-0644 (weekdays 9:00–19:00).',
     preferEmail: 'Prefer email directly? Reach us at',
     demoNote: '',
     labels: {
