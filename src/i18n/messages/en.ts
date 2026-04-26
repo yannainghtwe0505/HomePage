@@ -34,66 +34,65 @@ export const en: typeof ja = {
   },
   footer: {
     tagline:
-      'IT-focused talent solutions—thoughtful matching for engineers and enterprises across Greater Tokyo and beyond.',
+      'We support enterprise engineering organizations through IT staffing, contracted development, and technical services—operating under licensed programs, primarily in Greater Tokyo.',
     trustBlock:
-      'CMC Inc. (株式会社シ・エム・シ) · Ginza Sanno Building 3F, 4-10-10 Ginza, Chuo-ku, Tokyo 104-0061, Japan · Tel +81-3-3544-0644 (weekdays 9:00–19:00) · info@cmc-a.co.jp',
+      'CMC Inc. · Ginza Sanno Building 3F, 4-10-10 Ginza, Chuo-ku, Tokyo 104-0061 · Tel +81-3-3544-0644 (weekdays 9:00–19:00) · info@cmc-a.co.jp',
     explore: 'Explore',
     privacyLine:
       'For privacy requests and disclosures, please use the contact form or email. Ginza Sanno Building 3F, 4-10-10 Ginza, Chuo-ku, Tokyo 104-0061 · ',
     copyright: 'All rights reserved.',
     corporateBlock: {
-      heading: 'Registered office & contact',
+      heading: 'Corporate information',
       legalName: 'CMC Inc. (株式会社シ・エム・シ)',
       address: 'Ginza Sanno Building 3F, 4-10-10 Ginza, Chuo-ku, Tokyo 104-0061, Japan',
       tel: 'Tel: +81-3-3544-0644 (weekdays 9:00–19:00)',
       email: 'Email: info@cmc-a.co.jp',
-      privacyLabel: 'Privacy policy (website)',
+      businessDesc:
+        'Services: IT engineer dispatch (SES), contracted system development, and technical / consulting support to strengthen client delivery organizations.',
+      licenseLine: 'Staffing license 13-301513 · Paid job-placement license 13-ユ-302642',
+      privacyLabel: 'Privacy policy',
     },
   },
   home: {
     hero: {
-      kicker: 'CMC Inc. · IT talent services',
-      line1: 'Licensed IT staffing',
-      line2: 'and delivery support.',
+      kicker: 'CMC Inc. · IT solutions',
+      line1: 'A reliable partner',
+      line2: 'for your enterprise IT challenges.',
       serviceOneLiner:
-        'We provide IT engineer dispatch, contracted system development, and technical support. SES, general staffing, and paid job placement are operated under applicable licenses from our Tokyo (Ginza) head office, primarily for clients in Greater Tokyo.',
-      sub: 'Founded in 1996. We support project delivery and engineers through licensed, compliant operations.',
+        'Through IT engineer staffing, contracted development, and technical support, we help enterprises strengthen their engineering delivery.',
+      sub: '',
+      ctaContact: 'Business inquiries',
       ctaPrimary: 'Careers & openings',
       trustLine:
-        'CMC Inc. (株式会社シ・エム・シ) · Ginza, Chuo-ku, Tokyo HQ · IT staffing & development support · Staffing 13-301513 · Job placement 13-ユ-302642',
+        'CMC Inc. · Chuo-ku, Tokyo (Ginza HQ) · IT staffing & contracted development · Staffing license 13-301513 (job placement 13-ユ-302642)',
       linkContact: 'Business inquiries',
       linkBusiness: 'Services & licenses',
       linkCompany: 'Company profile',
     },
     capabilities: {
-      eyebrow: 'What we deliver',
-      title: 'From AI and cloud to delivery teams—one partner',
-      sub: 'Licensed talent services and development support—from platform work through team staffing—for client programs across Greater Tokyo.',
-      serviceBullets: ['IT engineer dispatch (SES)', 'System development (contracted)', 'Technical support'],
-      serviceLead:
-        'Core offerings: engineer dispatch under SES contracts, general staffing, paid job-placement, and software/consulting support—combined to match each engagement.',
-      serviceCta: 'View services',
+      eyebrow: 'Services',
+      title: 'What we do',
+      sub: 'We provide the right technical support for your challenges and delivery organization.',
+      serviceBullets: [],
+      serviceLead: '',
+      serviceCta: 'Service details',
       items: [
         {
-          title: 'AI & data',
-          body: 'ML pipelines, MLOps, and analytics platforms—translating business problems into shipped models with operational guardrails.',
+          title: 'IT engineer dispatch (SES)',
+          body: 'We assign experienced engineers to your projects to support development and operations.',
         },
         {
-          title: 'Cloud & scale',
-          body: 'AWS/GCP foundations, containers, IaC, and cost-aware scaling. We help you assemble teams that build resilient platforms.',
+          title: 'System development (contracted)',
+          body: 'End-to-end delivery from requirements through design, development, and operations.',
         },
         {
-          title: 'Application delivery',
-          body: 'Business systems to modern web stacks. We staff cross-functional squads with quality, security, and velocity in mind.',
-        },
-        {
-          title: 'Talent operations',
-          body: 'SES, dispatch, and placement under licensed operations—speed with compliance and predictable onboarding.',
+          title: 'Technical support & consulting',
+          body: 'We propose and execute solutions for technical issues including cloud and AI.',
         },
       ],
     },
     quickLinks: {
-      eyebrow: 'Corporate',
+      eyebrow: 'Site',
       title: 'Key pages',
       items: [
         { to: '/company', label: 'Company' },
@@ -103,12 +102,12 @@ export const en: typeof ja = {
       ],
     },
     businessFlow: {
-      eyebrow: 'Flow',
-      title: 'Typical engagement (B2B)',
+      eyebrow: 'Process',
+      title: 'How we work with you',
       steps: [
-        { title: 'Inquiry', desc: 'Contact us by form or phone with your requirements and context.' },
-        { title: 'Proposal', desc: 'We propose staffing structure, profiles, terms, and timeline.' },
-        { title: 'Contract & start', desc: 'After agreements are signed, work begins according to the project plan.' },
+        { title: 'Inquiry', desc: 'We hear your needs and challenges.' },
+        { title: 'Proposal & matching', desc: 'We propose the right engineers and delivery structure.' },
+        { title: 'Contract & kickoff', desc: 'After contract signing, work begins promptly.' },
       ],
     },
     whyChoose: {
@@ -163,45 +162,14 @@ export const en: typeof ja = {
     },
     news: {
       eyebrow: 'News',
-      title: 'Updates',
-      note: 'Selected announcements. For full details, please call or use the contact form.',
+      title: 'Announcements',
+      note: 'Selected updates. For details, please call or use the contact form.',
       items: [
-        {
-          date: 'Apr 15, 2025',
-          dateIso: '2025-04-15',
-          title:
-            'Corporate website updated: revised structure for company profile, services, careers, and privacy policy, with improved readability on smartphones.',
-        },
-        {
-          date: 'Feb 10, 2025',
-          dateIso: '2025-02-10',
-          title:
-            'Ongoing recruitment for permanent and contract employees, and for partner firms. See the Careers page and en-gage for open positions and conditions.',
-        },
-        {
-          date: 'Dec 2, 2024',
-          dateIso: '2024-12-02',
-          title:
-            'Year-end / New Year schedule: closed Saturday, December 28 through Sunday, January 5; normal operations resume Monday, January 6. Email received during the closure will be answered in order after we reopen.',
-        },
-        {
-          date: 'Sep 18, 2024',
-          dateIso: '2024-09-18',
-          title:
-            'Internal rules on information security and personal data protection were revised. Staff briefings were held to reinforce day-to-day compliance.',
-        },
-        {
-          date: 'Jun 3, 2024',
-          dateIso: '2024-06-03',
-          title:
-            'As a PrivacyMark-certified operator, we reviewed our personal information protection management system and conducted employee training.',
-        },
-        {
-          date: 'Apr 1, 2024',
-          dateIso: '2024-04-01',
-          title:
-            'Part of our internal organization was reorganized for the new fiscal year. Where client contact points change, we will notify affected customers individually.',
-        },
+        { date: 'Apr 20, 2026', dateIso: '2026-04-20', title: 'Corporate website renewed.' },
+        { date: 'Apr 10, 2026', dateIso: '2026-04-10', title: 'We are strengthening engineer recruitment.' },
+        { date: 'Mar 28, 2026', dateIso: '2026-03-28', title: 'Expanded scope of development support projects.' },
+        { date: 'Mar 15, 2026', dateIso: '2026-03-15', title: 'Launched cloud technical support services.' },
+        { date: 'Mar 1, 2026', dateIso: '2026-03-01', title: 'Started a project with a new client.' },
       ],
     },
     storyVision: {
@@ -213,9 +181,9 @@ export const en: typeof ja = {
       ctaJobs: 'Open positions',
     },
     about: {
-      eyebrow: 'About',
-      title: 'From staffing to team design and retention',
-      body: 'We combine dispatch, placement, and SES under licensed, contract-compliant operations. Coordinators assess role scope, delivery process, and operational load from matching through ongoing support.',
+      eyebrow: 'About us',
+      title: 'Who we are',
+      body: 'We are a company that supports enterprise development organizations in the IT engineering field. With technical depth and talent capabilities, we work on solving our clients’ challenges.',
       link: 'Company overview',
     },
     highlights: {
@@ -707,9 +675,9 @@ export const en: typeof ja = {
   contact: {
     page: {
       eyebrow: 'Contact',
-      title: 'Talk with us',
+      title: 'Contact',
       description:
-        'For services, talent needs, partnerships, or careers—please complete the form below. A coordinator will follow up.',
+        'For consultations or requests, please reach out below. After we review your message, a coordinator will contact you.',
     },
     formIntro:
       'After you tap submit, your mail app opens with a pre-filled message to us. Please review and send from your device. We do not store form submissions on our web server.',

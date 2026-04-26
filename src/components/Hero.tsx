@@ -65,31 +65,38 @@ export function Hero() {
         >
           {h.serviceOneLiner}
         </motion.p>
-        <motion.p
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.55, delay: 0.14 }}
-          className="mt-5 max-w-xl text-lg leading-relaxed text-slate-300 sm:text-xl"
-        >
-          {h.sub}
-        </motion.p>
+        {h.sub.trim() ? (
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.55, delay: 0.14 }}
+            className="mt-5 max-w-xl text-lg leading-relaxed text-slate-300 sm:text-xl"
+          >
+            {h.sub}
+          </motion.p>
+        ) : null}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.55, delay: 0.2 }}
           className="mt-10 flex max-w-2xl flex-col gap-5"
         >
-          <Link
-            to="/recruit"
-            className="inline-flex w-fit items-center justify-center rounded-full bg-white px-8 py-3.5 text-base font-semibold text-slate-900 shadow-lg transition hover:bg-slate-100"
-          >
-            {h.ctaPrimary}
-          </Link>
+          <div className="flex flex-wrap gap-3">
+            <Link
+              to="/contact"
+              className="inline-flex w-fit items-center justify-center rounded-full border border-white/85 bg-transparent px-7 py-3.5 text-base font-semibold text-white shadow-sm transition hover:bg-white/10"
+            >
+              {h.ctaContact}
+            </Link>
+            <Link
+              to="/recruit"
+              className="inline-flex w-fit items-center justify-center rounded-full bg-white px-8 py-3.5 text-base font-semibold text-slate-900 shadow-lg transition hover:bg-slate-100"
+            >
+              {h.ctaPrimary}
+            </Link>
+          </div>
           <p className="text-sm leading-relaxed text-slate-300/95 sm:text-[0.9375rem]">{h.trustLine}</p>
           <div className="flex flex-wrap gap-x-6 gap-y-2 text-sm font-semibold">
-            <Link to="/contact" className="text-white/90 underline decoration-white/35 underline-offset-4 transition hover:text-white">
-              {h.linkContact} →
-            </Link>
             <Link to="/business" className="text-white/90 underline decoration-white/35 underline-offset-4 transition hover:text-white">
               {h.linkBusiness} →
             </Link>

@@ -21,17 +21,21 @@ export function HomeCapabilities() {
             {c.title}
           </h2>
           <p className="mt-4 max-w-2xl text-lg text-slate-600 dark:text-slate-400">{c.sub}</p>
-          <ul className="mt-5 flex flex-wrap gap-x-6 gap-y-2 text-sm font-semibold text-slate-800 dark:text-slate-200">
-            {c.serviceBullets.map((line) => (
-              <li key={line} className="flex items-center gap-2">
-                <span className="h-1.5 w-1.5 shrink-0 rounded-full bg-teal-600 dark:bg-teal-400" aria-hidden />
-                {line}
-              </li>
-            ))}
-          </ul>
-          <p className="mt-5 max-w-3xl border-l-2 border-teal-600/50 pl-4 text-sm font-medium leading-relaxed text-slate-700 dark:border-teal-500/50 dark:text-slate-300">
-            {c.serviceLead}
-          </p>
+          {c.serviceBullets.length > 0 ? (
+            <ul className="mt-5 flex flex-wrap gap-x-6 gap-y-2 text-sm font-semibold text-slate-800 dark:text-slate-200">
+              {c.serviceBullets.map((line) => (
+                <li key={line} className="flex items-center gap-2">
+                  <span className="h-1.5 w-1.5 shrink-0 rounded-full bg-teal-600 dark:bg-teal-400" aria-hidden />
+                  {line}
+                </li>
+              ))}
+            </ul>
+          ) : null}
+          {c.serviceLead.trim() ? (
+            <p className="mt-5 max-w-3xl border-l-2 border-teal-600/50 pl-4 text-sm font-medium leading-relaxed text-slate-700 dark:border-teal-500/50 dark:text-slate-300">
+              {c.serviceLead}
+            </p>
+          ) : null}
         </FadeIn>
         <div className="mt-12 grid gap-6 sm:grid-cols-2">
           {c.items.map((item, i) => (
